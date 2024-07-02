@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/public/images/form.jpg");
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'goudy';
+    src: url("/public/fonts/Goudy-Titling-W05-Bold.ttf") format('opentype');
+}
+
+@font-face {
+    font-family: 'orangelemonade';
+    src: url("/public/fonts/Orange\ Lemonade.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'gillsans';
+    src: url("/public/fonts/GIL_____.TTF") format('opentype');
+}
+
+@font-face {
+    font-family: 'gotham';
+    src: url("/public/fonts/GothamBook.ttf") format('opentype');
+}
+
+.nav-bar {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+}
+
+.navbar-btn {
+    height: 80px;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    transition: 0.3s;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.navbar-logo {
+    height: 80px;
+    font-size: 45px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 17px;
+    transition: 0.5s;
+    color: white;
+    font-family: 'orangelemonade', sans-serif;
+}
+
+.wrapper {
+    margin-top: 70px;
+    margin-left: 65px;
+    height: 1720px;
+    width: 1800px;
+    background-color: #ffffffb4;
+    border-radius: 20px 20px 20px 20px;
+    border: 30px;
+    border-color: #00000063;
+}
+
+.add-a-place {
+    padding-top: 50px;
+    padding-left: 750px;
+    font-family: 'orangelemonade', sans-serif;
+    font-size: 70px;
+}
+
+input {
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    padding-left: 15px;
+    border-radius: 15px;
+    border: 0.6px solid lightgrey;
+}
+
+textarea {
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-top: 10px;
+    border-radius: 15px;
+    border: 0.6px solid lightgrey;
+}
+
+select {
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    padding-left: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    border-radius: 15px;
+    border: 0.6px solid lightgrey;   
+}
+
+.field {
+    width: 360px;
+    height: 50px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.em-text {
+    color: black;
+    font-size: 30px;
+    font-family: "goudy";
+    position: absolute;
+}
+
+.input-field {
+    margin-left: 50px;
+    width: 1670px;
+}
+
+.name {
+    width: 1700px;
+}
+
+.description {
+    width: 1700px;
+    height: 500px;
+}
+
+.history {
+    width: 1700px;
+    height: 400px;
+}
+
+.submit-butt {
+    margin-left: 710px;
+    background-image: linear-gradient(to right, rgb(22, 84, 255) , rgb(253, 9, 9)); 
+    color: white;
+    font-size: 18px;
+    font-family: 'goudy';
+    transition: 0.3s;
+}
+
+.msg {
+    margin-left: 50px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}

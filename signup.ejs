@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./public/css/signupstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mate&family=Playfair+Display&family=Poppins:wght@500&family=Prata&display=swap" 
+    rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="login-info">
+        <div class="up-text"><p class="welcome-text">Join Us!</p></div>
+        <form action="/signup" method="POST" id="signupForm">
+            <div class="namefield">
+                <div>
+                    <h4 class="em-text">First Name:</h4>
+                    <div id="firstname" class="field">
+                        <input id="email-value" type="text" name="firstname">
+                    </div>
+                </div>
+                <div>
+                    <h4 class="em-text" style="margin-left: 60px;">Last Name: </h4>
+                    <div id="lastname" class="field">
+                        <input id="email-value" type="text" name="lastname">
+                    </div>
+                </div>
+           </div>
+           <div class="namefield">
+                <div>
+                    <h4 class="em-text">E-mail Address: </h4>
+                    <div class="field">
+                        <input id="email-value" type="email" name="email">
+                    </div>
+                </div>
+                <div>   
+                    <h4 class="em-text" style="margin-left: 60px;">Password: </h4>
+                    <div style="margin-left: 40px;" class="field">
+                        <input id="pass-value" type="password" name="pass">
+                    </div>
+                </div>
+            </div>
+            <div class="namefield">
+                <div>
+                    <h4 class="em-text">Type of User: </h4>
+                    <div class="field">
+                        <select id="usertype" name="user">
+                            <option value="local">Local</option>
+                            <option value="admin">Admin</option>
+                          </select>
+                    </div>
+                </div>
+                <div>   
+                    <h4 class="em-text" style="margin-left: 60px;">Mobile Number: </h4>
+                    <div style="margin-left: 40px;" class="field">
+                        <input id="mob-no" type="number" name="mobno">
+                    </div>
+                </div>
+            </div>
+           <div class="field">
+                <input class="login-butt" type="submit" value="Sign Up">
+           </div>
+        </form>
+        </div>
+        <div class="already">
+            <p>Already a user? Go to the <a href="./login.html">login page.</a></p>   
+        </div>
+        <div class="message">
+            <% if(signUp===1) { %>
+                <p style="color: green">User registered successfully! Please go to login page.</p>
+            <% } else if (signUp===2) { %>
+                <p style="color: red">Error registering user into database!</p>
+            <% } %>
+        </div>
+    </div>
+</body>
+
+</html>

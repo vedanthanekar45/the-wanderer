@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'orangelemonade';
+    src: url("../fonts/Orange\ Lemonade.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'gillsans';
+    src: url("../fonts/GIL_____.TTF") format('opentype');
+}
+
+@font-face {
+    font-family: 'gotham';
+    src: url("../fonts/GothamBook.ttf") format('opentype');
+}
+
+.nav-bar {
+    position: fixed;
+    backdrop-filter: blur(20px);
+    display: flex;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    z-index: 3;
+}
+
+.navbar-btn {
+    height: 80px;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    transition: 0.3s;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.navbar-logo {
+    height: 80px;
+    font-size: 45px;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-top: 22px;
+    transition: 0.5s;
+    color: black;
+    font-family: 'orangelemonade', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-btn:hover {
+    transform: scale(1.18);
+}
+
+.maintext-container {
+    height: 1268px;
+    background-image: url("/public/images/tour2.png");
+}
+
+.welcome-text {
+    display: flex;
+    justify-content: center;
+    font-family: 'orangelemonade', sans-serif;
+    color:black;
+    font-size: 7rem;
+    text-align: center;
+    padding-top: 310px;
+    animation: 1.5s fadeInUp;
+}
+
+
+.explore-places {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    color:beige;
+    padding-bottom: 20px;
+    font-size: 6rem;
+    font-family: 'orangelemonade', sans-serif;
+    animation: 1.5s fadeInUp;
+}
+
+.categories {
+    display: flex;
+}
+
+.category-name {
+    font-family: 'orangelemonade', sans-serif;
+    font-size: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 2px #000000;
+}
+
+.category-tile {
+    width: 951.5px;
+    height: 467px;
+    filter: sepia(100%);
+    object-fit: contain;
+    transition: 0.6s;
+}
+
+.park {
+    width: 1903px;
+    height: 467px;
+    filter: sepia(100%);
+    object-fit: contain;
+    transition: 0.6s;
+}
+
+.what-we-do {
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+
+.about {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color:white;
+    padding-top: 40px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.category-tile:hover {
+    filter: sepia(0%);
+}
+
+.park:hover {
+    filter: sepia(0%);
+}
+
+.navbar-logo:hover {
+    letter-spacing: 1px;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(7%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes scrollup {
+    0% {
+        opacity: 0;
+    }
+}

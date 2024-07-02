@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Events</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        background-image: linear-gradient(to right, #7dff90, #57ffeb);
+    }
+
+    .banner {
+        padding-top: 80px;
+        width: 1903px;
+        height: 500px;
+    }
+    
+    .banner-text {
+        display: flex;
+        z-index: 0;
+        justify-content: center;
+        font-family: "goudy";
+        font-size: 100px;
+        color: black;
+        padding-top: 130px;
+        transition: ease-in-out
+    }
+    
+    .banner-desc {
+        display: flex;
+        justify-content: center;
+        font-family: "goudy";
+        font-size: 30px;
+        padding-top: 15px;
+    }
+
+    .place-description {
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+    }
+</style>
+<body>
+    <%- include("header.ejs") %>
+    <div class="banner">
+        <p class="banner-text">E V E N T S</p>
+        <p class="banner-desc">Everything happening in Nashik, here!</p>
+    </div>
+    <div class="place-description">
+        <p>
+            There are currently no events to display! We will update this page soon!           
+        </p>
+    </div>
+</body>
+</html>

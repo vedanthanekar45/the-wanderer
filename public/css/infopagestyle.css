@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+@font-face {
+    font-family: 'goudy';
+    src: url("/public/fonts/Goudy-Titling-W05-Bold.ttf") format('opentype');
+}
+
+@font-face {
+    font-family: 'orangelemonade';
+    src: url("/public/fonts/Orange\ Lemonade.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'gillsans';
+    src: url("/public/fonts/GIL_____.TTF") format('opentype');
+}
+
+@font-face {
+    font-family: 'gotham';
+    src: url("/public/fonts/GothamBook.ttf") format('opentype');
+}
+
+.nav-bar {
+    display: flex;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+}
+
+.navbar-btn {
+    height: 80px;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    transition: 0.3s;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.navbar-logo {
+    height: 80px;
+    font-size: 45px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 17px;
+    transition: 0.5s;
+    color: white;
+    font-family: 'orangelemonade', sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background-image: url(<%=bannerPath%>);
+    object-fit: contain;
+}
+
+.place-title {
+    display: flex;
+    justify-content: center;
+    font-family: "goudy";
+    font-size: 50px;
+    margin-top: 70px;
+}
+
+.difficulty {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 80px;
+    margin-left: 320px;
+    font-size: 30px;
+}
+
+.place-description {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
+    margin-left: 320px;
+    margin-right: 250px;
+    font-size: 25px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+iframe {
+    width: 100%;
+}

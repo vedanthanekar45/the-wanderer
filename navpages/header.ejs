@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mate&family=Playfair+Display&family=Poppins:wght@500&family=Prata&display=swap" 
+    rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    @font-face {
+        font-family: 'orangelemonade';
+        src: url("/public/fonts/Orange\ Lemonade.otf") format('opentype');
+    }
+    
+    @font-face {
+        font-family: 'gillsans';
+        src: url("/public/fonts/GIL_____.TTF") format('opentype');
+    }
+    
+    @font-face {
+        font-family: 'gotham';
+        src: url("/public/fonts/GothamBook.ttf") format('opentype');
+    }
+
+    .nav-bar {
+        position: absolute;
+        display: flex;
+        background-color: black;
+        width: 100%;
+        height: 80px;
+        padding-top: 10px;
+    }
+    
+    .navbar-btn {
+        height: 80px;
+        font-size: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        transition: 0.3s;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 100;
+    }
+    
+    .navbar-logo {
+        height: 80px;
+        font-size: 45px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 17px;
+        transition: 0.5s;
+        color: white;
+        font-family: 'orangelemonade', sans-serif;
+    }
+</style>
+<body>
+    <div class="nav-bar">
+        <a href="/">
+            <div class="navbar-logo">
+                <p>The Wanderer</p>
+            </div>
+        </a>
+        <a href="#"><div style="margin-left: 250px;" class="navbar-btn">
+            <p>Explore</p>
+        </div></a>
+        <a href="#"><div class="navbar-btn">
+            <p>Events</p>
+        </div></a>
+        <a href="#"><div class="navbar-btn">
+            <p>Stay</p>
+        </div></a>
+        <a href="#"><div class="navbar-btn">
+            <p>Plan</p>
+        </div></a>
+        <a href="#"><div class="navbar-btn">
+            <p>Transport</p>
+        </div></a>
+    </div>
+</body>
+</html>

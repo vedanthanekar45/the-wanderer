@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=placename%>- The Wanderer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mate&family=Playfair+Display&family=Poppins:wght@500&family=Prata&display=swap" 
+    rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/d5c80864778b6a77985e543b4528f522?family=Goudy+Titling+W05+Regular" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/infopagestyle.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="/">
+            <div class="navbar-logo">
+                <p>The Wanderer</p>
+            </div>
+        </a>
+        <a href="/"><div style="margin-left: 250px;" class="navbar-btn">
+            <p>Explore</p>
+        </div></a>
+        <a href="/events"><div class="navbar-btn">
+            <p>Events</p>
+        </div></a>
+        <a href="#"><div class="navbar-btn">
+            <p>Stay</p>
+        </div></a>
+        <a href="#"><div class="navbar-btn">
+            <p>Plan</p>
+        </div></a>
+        <a href="#"><div class="navbar-btn">
+            <p>Transport</p>
+        </div></a>
+    </div>
+    <div class="banner"></div>
+    <div class="place-title">
+        <h1>
+            <%= placename %>
+        </h1>
+    </div>
+    <div class="place-title">
+        <h5>Description</h5>
+    </div>
+    <div class="place-description" style="margin-top: 60px;">
+        <p>
+            <%- desc.split(/\n\n/).join('<p>') %><br><br>           
+        </p>
+    </div>
+    <div class="place-title">
+        <h5>History</h5>
+    </div>
+    <div class="place-description" style="margin-top: 60px;">
+        <p>
+            <%- history.split(/\n\n/).join('<p>') %>
+        </p>
+    </div>
+    <div class="place-title">
+        <h5>Location</h5>
+    </div>
+    <div class="map">
+        <%- map %>
+    </div>
+</body>
+</html>

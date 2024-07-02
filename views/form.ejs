@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wanderer: Add a Place</title>
+    <link rel="stylesheet" href="../public/css/formstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mate&family=Playfair+Display&family=Poppins:wght@500&family=Prata&display=swap" 
+    rel="stylesheet">
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="/">
+            <div class="navbar-logo">
+                <p>The Wanderer</p>
+            </div>
+        </a>
+        <a href="#"><div style="margin-left: 280px;" class="navbar-btn">
+            <p>Explore</p>
+        </div></a>
+        <a href="#"><div class="navbar-btn">
+            <p>Events</p>
+        </div></a>
+        <a href="#"><div class="navbar-btn">
+            <p>Stay</p>
+        </div></a>
+        <a href="#"><div class="navbar-btn">
+            <p>Plan</p>
+        </div></a>
+        <a href="#"><div class="navbar-btn">
+            <p>Transport</p>
+        </div></a>
+        <div class="navbar-btn" style="margin-left: 200px;">
+            <p>Welcome <%= nameLoggedIn %>!</p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <p class="add-a-place">Add A New Place</p>
+        <div class="msg">
+            <% if(infoRecorded===1) { %>
+                <p style="color: green">Info registered! Admins will review and publish your info soon.</p>
+            <% } else if (infoRecorded===2) { %>
+                <p style="color: red">Error registering info into database!</p>
+            <% } %>
+        </div>
+        <div class="form">
+            <form action="/getinfo" method="POST" id="getinfo">
+                <div class="input-field">
+                    <h4 class="em-text">Name:</h4>
+                    <div class="field">
+                        <input class="name" type="text" placeholder="Enter the name of the place..." name="name">
+                    </div>
+                </div><br>
+                <div class="input-field">
+                    <h4 class="em-text">Category: </h4>
+                    <div class="field">
+                        <select id="usertype" name="category">
+                            <option selected disabled>Select</option>
+                            <option value="treks">Treks</option>
+                            <option value="religious">Religious</option>
+                            <option value="food">Food</option>
+                            <option value="entertainment">Entertainment</option>
+                            <option value="parks">Parks and Gardens</option>
+                            <option value="museums">Museums</option>
+                            <option value="water">Water Bodies</option>
+                          </select>
+                    </div>
+                </div><br>
+                <div class="input-field">
+                    <h4 class="em-text">Description: </h4>
+                    <div class="field">
+                        <textarea class="description" type="text" placeholder="Here goes the description..." name="description"></textarea>
+                    </div>
+               </div><br>
+               <div class="input-field" style="margin-top: 480px;">
+                    <h4 class="em-text">History: </h4>
+                    <div class="field">
+                        <textarea class="history" type="text" placeholder="How did it all start..." name="history"></textarea>
+                    </div>
+                </div>
+                <div class="input-field" style="margin-top: 430px;">
+                    <h4 class="em-text">Map Location:</h4>
+                    <div class="field">
+                        <input class="name" type="text" placeholder="Go to Google Maps and copy HTML iframe link..." name="map">
+                    </div>
+                </div><br>
+                
+                <div class="field">
+                    <input class="submit-butt" type="submit" value="Submit">
+               </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@font-face {
+    font-family: 'goudy';
+    src: url("/public/fonts/Goudy-Titling-W05-Bold.ttf") format('opentype');
+}
+
+@font-face {
+    font-family: 'orangelemonade';
+    src: url("/public/fonts/Orange\ Lemonade.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'gillsans';
+    src: url("/public/fonts/GIL_____.TTF") format('opentype');
+}
+
+@font-face {
+    font-family: 'gotham';
+    src: url("/public/fonts/GothamBook.ttf") format('opentype');
+}
+
+.nav-bar {
+    z-index: 5;
+    display: flex;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+}
+
+.navbar-btn {
+    height: 80px;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    transition: 0.3s;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.navbar-logo {
+    height: 80px;
+    font-size: 45px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 17px;
+    transition: 0.5s;
+    color: white;
+    font-family: 'orangelemonade', sans-serif;
+}
+
+.banner {
+    padding-top: 80px;
+    width: 1903px;
+    height: 500px;
+}
+
+.banner-text {
+    display: flex;
+    z-index: 0;
+    justify-content: center;
+    font-family: "goudy";
+    font-size: 100px;
+    color: black;
+    padding-top: 130px;
+    transition: ease-in-out
+}
+
+.banner-desc {
+    display: flex;
+    justify-content: center;
+    font-family: "goudy";
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+.popular {
+    font-family: "goudy";
+    color: white;
+    margin-left: 60px;
+    margin-top: 80px;
+    font-size: 40px;
+
+}
+
+.tile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-family: "goudy";
+}
+
+.place-tile {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin-left: 30px;
+    width: 550px;
+    height: 700px;
+    box-shadow: 0px 0px 2px 1px #000000;
+    border-radius: 8px 8px 8px 8px;
+    object-fit: contain;
+}
+
+.place-name {
+    text-align: center;
+    position: absolute;
+    font-size: 45px;
+    bottom: 45%;
+    left: 14%;
+    font-family: "goudy";
+    color: white;
+    transition: 0.5s
+}
+
+.place-desc {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    bottom: 0%;
+    opacity: 0%;
+    transition: 0.4s ease-in-out;
+}
+
+.place-tile:hover {
+    .place-name {
+        bottom: 80%;
+    }
+
+    .place-desc {
+        opacity: 100%;
+        bottom: 35%;
+    }
+}
